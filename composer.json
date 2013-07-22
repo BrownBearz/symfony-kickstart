@@ -21,7 +21,8 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "friendsofsymfony/user-bundle" : "dev-master",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "phpmd/phpmd" : "1.4.*",
+        "incenteev/composer-parameter-handler": "2.1.*@dev"
     },
     "scripts": {
         "post-install-cmd": [
@@ -43,15 +44,19 @@
         "bin-dir": "bin"
     },
     "minimum-stability": "stable",
+    "branch-alias": {
+         "dev-master": "2.3-dev"
+    },
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
-        "incenteev-parameters": {
-            "file": "app/config/parameters.yml",
-            "file": "app/config/databases.yml"
-        },
-        "branch-alias": {
-            "dev-master": "2.3-dev"
-        }
+        "incenteev-parameters": [
+            {
+                "file": "app/config/parameters.yml"
+            },
+            {
+                "file": "app/config/databases.yml"
+            }
+        ]
     }
 }
