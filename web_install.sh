@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Drop in the Symfony RAD bundle here
-git clone git@github.com:FAMC-Development/symfony-rad.git .
+git clone https://github.com/FAMC-Development/symfony-rad.git .
 
 # remove file from src/FAMC/.git_keep
 rm src/FAMC/.git_keep
