@@ -2,7 +2,7 @@
 
 # Drop in the Symfony RAD bundle here
 git clone https://github.com/FAMC-Development/symfony-rad.git .
-git checkout tags/2.4
+git checkout tags/2.3
 
 # remove file from src/FAMC/.git_keep
 rm src/FAMC/.git_keep
