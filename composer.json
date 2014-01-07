@@ -1,5 +1,5 @@
 {
-    "name": "famc/rad-bundle",
+    "name": "famc/kickstart",
     "type": "project",
     "license": "proprietary",
     "description": "FAMC Rapid Application Development bundle",
@@ -20,20 +20,20 @@
         "sensio/distribution-bundle": "~2.3",
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
+        "phpmd/phpmd" : "~1.4",
         "friendsofsymfony/user-bundle" : "dev-master",
-        "phpmd/phpmd" : "1.4.*",
-        "incenteev/composer-parameter-handler": "2.1.*@dev"
+        "blueshamrock/bsd-rad": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "BlueShamrock\\Symfony\\Composer\\ScriptHandler::installEnvironmentFiles",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "BlueShamrock\\Symfony\\Composer\\ScriptHandler::installEnvironmentFiles",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
@@ -44,19 +44,8 @@
         "bin-dir": "bin"
     },
     "minimum-stability": "stable",
-    "branch-alias": {
-         "dev-master": "2.4-dev"
-    },
     "extra": {
         "symfony-app-dir": "app",
-        "symfony-web-dir": "web",
-        "incenteev-parameters": [
-            {
-                "file": "app/config/parameters.yml"
-            },
-            {
-                "file": "app/config/databases.yml"
-            }
-        ]
-    }
+        "symfony-web-dir": "web"
+        }
 }
