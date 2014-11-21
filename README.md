@@ -6,8 +6,9 @@ To allow developers at Franklin American Mortgage to quickly spin up a Symfony p
 
 ## Packages Installed
 
- * Symfony 2.4
+ * Symfony 2.6
  * Sensio Framework Extra Bundle 3.0.x
+ * Sensio Distribution 3.0.x
  * Doctrine ORM 2.2.x - >=2.2.3
  * Doctrine Bundle 1.2.x
  * Twig Extensions 1.0.x
@@ -17,7 +18,11 @@ To allow developers at Franklin American Mortgage to quickly spin up a Symfony p
  * FOSUser 
  * PHP-MD
 
+## Dev Packages Installed
+
+ * Sensio Generator Bundle
+
 ## Web Install
 
- * curl -k https://raw.github.com/famc-development/symfony-rad/master/web_install.sh | bash
+ * composer.phar create-project -s dev --prefer-dist --dev famc/symfony-kickstart your_new_project 
 
