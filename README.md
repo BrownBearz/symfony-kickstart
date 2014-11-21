@@ -24,5 +24,5 @@ To allow developers at Franklin American Mortgage to quickly spin up a Symfony p
 
 ## Web Install
 
- * composer.phar create-project -s dev --prefer-dist --dev famc/symfony-kickstart your_new_project 
+ * composer.phar create-project -s dev --prefer-dist --dev famc/kickstart your_new_project 
 
