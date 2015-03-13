@@ -17,6 +17,7 @@ To allow developers at Franklin American Mortgage to quickly spin up a Symfony p
  * Monolog Bundle 2.4.x
  * FOSUser 
  * PHP-MD
+ * KGStaticBundle
 
 ## Dev Packages Installed
 

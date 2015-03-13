@@ -20,7 +20,8 @@
         "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
         "friendsofsymfony/user-bundle" : "~1.3",
-        "blueshamrock/bsd-rad": "dev-master"
+        "blueshamrock/bsd-rad": "dev-master",
+        "kgilden/static-bundle": "~1.0"
     },
     "require-dev":{
         "sensio/generator-bundle": "~2.3",

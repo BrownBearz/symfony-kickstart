@@ -8,6 +8,13 @@
     </head>
     <body>
         {% block body %}{% endblock %}
+        <footer id="footer" class="footer small container">
+            <hr>
+            <span>&copy; Franklin American Mortgage Company 2015</span>
+
+            {# Once a bundle is created, uncomment this line and place build_version.txt in your bundle to display the project's build version #}
+            {#<div id="buildVersion" class="right">Build Version: {{ file('@InsertNameOfYourBundle/Resources/files/build_version.txt') }}</div>#}
+        </footer>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
